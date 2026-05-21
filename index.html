@@ -150,7 +150,7 @@ img{display:block;max-width:100%;}
   font-size:clamp(2.3rem,4.5vw,3.8rem);font-weight:800;line-height:1.08;
   color:#fff;letter-spacing:-.02em;
 }
-.hero-h1 .gold{display:block;color:var(--gold);}
+.hero-h1 .gold{display:block;color:var(--gold);margin-top:.9rem;}
 .hero-sub{
   font-size:.97rem;line-height:1.72;
   color:rgba(255,255,255,.58);max-width:480px;
@@ -492,7 +492,9 @@ img{display:block;max-width:100%;}
   .hero-photo{width:100%;background-position:center 15%;}
   .hero-fade{background:linear-gradient(180deg,rgba(5,12,22,.3) 0%,rgba(5,12,22,.45) 35%,rgba(5,12,22,.92) 60%,#050c16 100%);}
   .hero-left{padding:60svh 5% 60px;width:100%;text-align:center;align-items:center;justify-content:flex-end;}
-  .hero-eyebrow{justify-content:center;}
+  .hero-eyebrow{justify-content:center;margin-top:1.5rem;}
+  .hero-h1 .gold{font-size:clamp(1.5rem,3.5vw,2.6rem);}
+  .hero-eyebrow{justify-content:center;margin-top:1.5rem;}
   .hero-vals{grid-template-columns:repeat(2,1fr);max-width:100%;}
   .hero-btns{flex-direction:column;width:100%;}
   .btn-green,.btn-ow{width:100%;justify-content:center;}
@@ -629,7 +631,7 @@ img{display:block;max-width:100%;}
     <div class="hero-vals">
       <div class="val-box"><i class="fas fa-handshake"></i><span>Trato humano<br>y cercano</span></div>
       <div class="val-box"><i class="fas fa-chess"></i><span>Estrategia<br>y compromiso</span></div>
-      <div class="val-box"><i class="fas fa-medal"></i><span>Más de 30 años<br>de trayectoria</span></div>
+      <div class="val-box"><i class="fas fa-medal"></i><span>30 años de<br>trayectoria</span></div>
       <div class="val-box"><i class="fas fa-lock"></i><span>Confidencialidad<br>total</span></div>
     </div>
     <div class="hero-btns">
@@ -660,8 +662,8 @@ img{display:block;max-width:100%;}
       <div><h5>Honorarios claros y accesibles</h5><p>Transparencia desde el primer contacto.</p></div>
     </div>
     <div class="tb-badge reveal">
-      <div class="tb-badge-num">30<span>+</span></div>
-      <p>Años de experiencia defendiendo derechos y resolviendo conflictos.</p>
+      <div class="tb-badge-num">30</div>
+      <p>años de trayectoria en divorcios y conflictos familiares.</p>
     </div>
   </div>
 </div>
@@ -671,19 +673,19 @@ img{display:block;max-width:100%;}
   <div class="aut-inner">
     <div class="aut-left reveal-left">
       <span class="sec-tag">Sobre mí</span>
-      <h2 class="sec-title">Abogado, periodista y <em>docente universitario.</em></h2>
-      <p class="aut-body">Soy abogado, periodista y docente universitario. Destrabo situaciones complejas con experiencia, negociación y un enfoque práctico. Como ex Director Nacional del SAIJ del Ministerio de Justicia de la Nación, acompaño a personas que necesitan claridad y respaldo en momentos difíciles.</p>
+      <h2 class="sec-title">Abogado, periodista y <em>docente universitario</em></h2>
+      <p class="aut-body">Destrabo situaciones complejas con experiencia, negociación y un enfoque práctico. Como ex Director Nacional del SAIJ del Ministerio de Justicia de la Nación, acompaño a personas que necesitan claridad y respaldo en los momentos más difíciles.</p>
       <div class="aut-feats">
         <div class="aut-feat"><i class="fas fa-check-circle"></i><span><strong>Ex Director Nacional del SAIJ</strong> — Ministerio de Justicia de la Nación</span></div>
-        <div class="aut-feat"><i class="fas fa-check-circle"></i><span>Abogado, periodista y docente universitario</span></div>
-        <div class="aut-feat"><i class="fas fa-check-circle"></i><span>Más de 30 años de trayectoria en conflictos familiares</span></div>
+        <div class="aut-feat"><i class="fas fa-check-circle"></i><span><strong>30 años de trayectoria</strong> en divorcios y conflictos familiares complejos</span></div>
+        <div class="aut-feat"><i class="fas fa-check-circle"></i><span>Especialista en divorcios, alimentos, perimetrales y régimen de comunicación</span></div>
         <div class="aut-feat"><i class="fas fa-check-circle"></i><span>Atención directa, sin intermediarios</span></div>
         <div class="aut-feat"><i class="fas fa-check-circle"></i><span>Confidencialidad garantizada en cada caso</span></div>
       </div>
     </div>
     <div class="aut-right reveal-right">
       <div class="aut-stat-grid">
-        <div class="aut-stat"><div class="aut-stat-num"><span class="counter" data-target="30" data-suffix="+">0</span></div><div class="aut-stat-label">Años de trayectoria</div></div>
+        <div class="aut-stat"><div class="aut-stat-num"><span class="counter" data-target="30" data-suffix="">0</span></div><div class="aut-stat-label">años de trayectoria</div></div>
         <div class="aut-stat"><div class="aut-stat-num"><span class="counter" data-target="100" data-suffix="%">0</span></div><div class="aut-stat-label">Confidencialidad garantizada</div></div>
         <div class="aut-stat"><div class="aut-stat-num" style="font-size:1.5rem;line-height:1.3;">CABA<br><span style="font-size:.85rem;color:var(--muted);">y GBA</span></div><div class="aut-stat-label">Zona de cobertura</div></div>
         <div class="aut-stat"><div class="aut-stat-num" style="font-size:1.3rem;line-height:1.4;">Consulta<br><span style="font-size:.82rem;color:var(--muted);">gratuita</span></div><div class="aut-stat-label">Primera orientación sin cargo</div></div>
@@ -779,22 +781,13 @@ img{display:block;max-width:100%;}
               <option>Divorcio o separación</option>
               <option>Violencia u hostigamiento</option>
               <option>Perimetrales y medidas urgentes</option>
-              <option>Hijos, alimentos y sucesiones</option>
-              <option>Despidos y reclamos laborales</option>
+              <option>Alimentos y régimen de comunicación</option>
               <option>Otro conflicto familiar</option>
             </select>
             <svg class="c-sel-arr" width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M2 4.5L7 9.5L12 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
             </svg>
           </div>
-          <div class="radio-grp">
-            <span class="radio-lbl">¿La situación requiere atención urgente?</span>
-            <div class="radio-opts">
-              <label class="radio-opt"><input type="radio" name="urg" value="Sí, es urgente"> Sí</label>
-              <label class="radio-opt"><input type="radio" name="urg" value="No es urgente" checked> No</label>
-            </div>
-          </div>
-          <input type="text" id="cf-ciudad" placeholder="¿En qué ciudad o localidad estás?">
           <textarea id="cf-msg" placeholder="Contanos brevemente qué está pasando..."></textarea>
           <button type="submit" class="c-submit"><i class="fab fa-whatsapp"></i> Enviar consulta por WhatsApp</button>
           <div class="form-priv"><i class="fas fa-lock"></i> Tu consulta será tratada con absoluta confidencialidad</div>
@@ -883,13 +876,12 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
 });
 function sendWA(e){
   e.preventDefault();
-  const n=document.getElementById('cf-nombre').value,t=document.getElementById('cf-tel').value,
-  si=document.getElementById('cf-sit').value||'No especificada',
-  u=document.querySelector('input[name="urg"]:checked')?.value||'No especificado',
-  c=document.getElementById('cf-ciudad').value||'No indicada',
-  m=document.getElementById('cf-msg').value||'Sin detalle';
-  const txt=`Hola Dr. Horowitz, me contacto desde su sitio web.\n\n*Nombre:* ${n}\n*Teléfono:* ${t}\n*Situación:* ${si}\n*¿Es urgente?:* ${u}\n*Ciudad:* ${c}\n*Detalle:* ${m}`;
-  window.open(`https://wa.me/5491100000000?text=${encodeURIComponent(txt)}`,'_blank');
+  const n=document.getElementById("cf-nombre").value,
+        t=document.getElementById("cf-tel").value,
+        si=document.getElementById("cf-sit").value||"No especificada",
+        m=document.getElementById("cf-msg").value||"Sin detalle";
+  const txt=`Hola Dr. Horowitz, me contacto desde su sitio web.\n\n*Nombre:* ${n}\n*Tel�fono:* ${t}\n*Situaci�n:* ${si}\n*Detalle:* ${m}`;
+  window.open(`https://wa.me/54911153786828?text=${encodeURIComponent(txt)}`,"_blank");
 }
 </script>
 </body>
