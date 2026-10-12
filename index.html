@@ -32,7 +32,7 @@
       --navy-mid: #0f2035;
       --navy-card: #111f33;
       --navy-section: #1a2a3a;
-      --footer-bg: #040b12;
+      --footer-bg: #081219;
       --gold: #c9a961;
       --gold-lt: #dfc07e;
       --gold-dk: #a88640;
@@ -40,7 +40,7 @@
       --green-lt: #22c55e;
       --green-dark: #15803d;
       --white: #fff;
-      --off-white: #f4f6f9;
+      --off-white: #e9ecf1;
       --text: #1a2236;
       --muted: #64748b;
       --border: rgba(201, 169, 97, .2);
@@ -75,6 +75,10 @@
     img {
       display: block;
       max-width: 100%;
+    }
+
+    .br-mobile {
+      display: none;
     }
 
     .reveal {
@@ -131,7 +135,7 @@
     }
 
     .h-logo img {
-      height: 138px;
+      height: 52px;
     }
 
     .h-nav {
@@ -141,10 +145,10 @@
     }
 
     .h-nav a {
-      font-size: .78rem;
-      font-weight: 600;
-      letter-spacing: .06em;
-      color: rgba(255, 255, 255, .82);
+      font-size: .82rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .72);
       transition: color .3s;
       position: relative;
     }
@@ -273,7 +277,7 @@
     }
 
     #mobile-nav .mn-logo img {
-      height: 170px;
+      height: 64px;
       display: inline-block;
     }
 
@@ -327,13 +331,13 @@
     }
 
     .hero-gold-top {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
       height: 3px;
       background: var(--grad-gold);
-      z-index: 3;
+      z-index: 99999;
     }
 
     .hero-photo {
@@ -383,7 +387,7 @@
     }
 
     .hero-eyebrow {
-      font-size: .76rem;
+      font-size: .86rem;
       font-weight: 700;
       letter-spacing: .28em;
       text-transform: uppercase;
@@ -407,16 +411,16 @@
       display: none;
       align-items: center;
       gap: .5rem;
-      font-size: .72rem;
+      font-size: .82rem;
       font-weight: 600;
       letter-spacing: .02em;
-      color: rgba(255, 255, 255, .62);
+      color: rgba(255, 255, 255, .7);
       white-space: nowrap;
     }
 
     .hero-credential i {
       color: var(--gold);
-      font-size: .78rem;
+      font-size: .92rem;
       flex-shrink: 0;
     }
 
@@ -438,16 +442,16 @@
       font-size: 1.06rem;
       line-height: 1.78;
       color: rgba(255, 255, 255, .62);
-      max-width: 480px;
+      max-width: 600px;
     }
 
     /* Validadores con ícono grande encima — fiel a la referencia */
     .hero-vals {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: .9rem .8rem;
       margin-top: .4rem;
-      max-width: 420px;
+      max-width: 600px;
     }
 
     .val-box {
@@ -568,14 +572,15 @@
 
     /* ═══ SECCIÓN ÁREAS + FORM LATERAL (fiel a referencia) ═══ */
     #dolor {
-      background: var(--off-white);
+      background: #e4e8ee;
       padding: 60px 3%;
       position: relative;
     }
 
     .dolor-title {
-      font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+      font-size: clamp(2rem, 3.7vw, 2.8rem);
       font-weight: 700;
+      line-height: 1.1;
       color: var(--navy);
       text-align: center;
       margin-bottom: 2.5rem;
@@ -660,9 +665,18 @@
     }
 
     .dc-arrow {
-      font-size: .75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
       color: var(--gold-dk);
-      margin-top: .3rem;
+      margin-top: auto;
+      align-self: flex-start;
+      transition: transform .3s;
+    }
+
+    .dc:hover .dc-arrow {
+      transform: translateX(3px);
     }
 
     .dolor-panel {
@@ -671,13 +685,15 @@
       padding: 1.8rem 1.5rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
       gap: 1rem;
       position: sticky;
       top: 120px;
     }
 
     .dolor-panel-tag {
-      font-size: .74rem;
+      font-size: .84rem;
       font-weight: 700;
       letter-spacing: .25em;
       text-transform: uppercase;
@@ -711,17 +727,18 @@
     }
 
     .dp-priv {
-      display: flex;
-      align-items: flex-start;
-      gap: .5rem;
+      display: block;
+      text-align: center;
+      max-width: 280px;
       font-size: .82rem;
+      font-weight: 600;
       line-height: 1.6;
-      color: rgba(255, 255, 255, .5);
+      color: rgba(255, 255, 255, .6);
     }
 
     .dp-priv i {
-      margin-top: .2rem;
-      flex-shrink: 0;
+      display: inline-block;
+      margin-right: .55rem;
       color: var(--gold);
       font-size: .8rem;
     }
@@ -916,7 +933,7 @@
 
     /* ═══ AUTORIDAD ═══ */
     #autoridad {
-      background: #fff;
+      background: #f2f3f6;
       padding: 100px 3%;
     }
 
@@ -936,7 +953,7 @@
     }
 
     .sec-tag {
-      font-size: .76rem;
+      font-size: .86rem;
       font-weight: 700;
       letter-spacing: .3em;
       text-transform: uppercase;
@@ -946,9 +963,9 @@
 
     .sec-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+      font-size: clamp(2.3rem, 4.1vw, 3.4rem);
       font-weight: 600;
-      line-height: 1.18;
+      line-height: 1.08;
     }
 
     .sec-title em {
@@ -995,19 +1012,19 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1px;
-      background: rgba(0, 0, 0, .08);
-      border: 1px solid rgba(0, 0, 0, .08);
+      background: rgba(11, 23, 36, .18);
+      border: 1px solid rgba(11, 23, 36, .18);
     }
 
     .aut-stat {
-      background: var(--off-white);
-      padding: 1.8rem 1.3rem;
+      background: #e4e8ee;
+      padding: 2.5rem 1.3rem;
       text-align: center;
       transition: background .3s;
     }
 
     .aut-stat:hover {
-      background: #e8edf5;
+      background: #d7dbe3;
     }
 
     .aut-stat-num {
@@ -1040,7 +1057,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
-      align-items: start;
+      align-items: stretch;
       position: relative;
       z-index: 1;
     }
@@ -1113,7 +1130,7 @@
     .form-cta-alt {
       display: flex;
       align-items: center;
-      gap: .7rem;
+      gap: 1.4rem;
       padding: 1rem 1.2rem;
       background: rgba(34, 197, 94, .07);
       border: 1px solid rgba(34, 197, 94, .22);
@@ -1142,6 +1159,9 @@
       border: 1px solid rgba(201, 169, 97, .2);
       border-top: 3px solid var(--gold);
       padding: 2.3rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .form-card-title {
@@ -1338,10 +1358,10 @@
       background: none;
       border: none;
       cursor: pointer;
-      padding: 1.35rem 3rem 1.35rem 0;
+      padding: 1.35rem 3.4rem;
       text-align: center;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 600;
       color: var(--navy);
       position: relative;
@@ -1362,17 +1382,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(201, 169, 97, .11);
+      background: none;
       color: var(--gold-dk);
-      font-size: 1.15rem;
+      font-size: 1.5rem;
+      font-weight: 800;
       line-height: 1;
       transition: transform .35s, background .3s, color .3s;
     }
 
     .faq-item.open .faq-icon {
       transform: translateY(-50%) rotate(45deg);
-      background: var(--gold);
-      color: #fff;
+      color: var(--gold);
     }
 
     .faq-a {
@@ -1382,12 +1402,12 @@
     }
 
     .faq-item.open .faq-a {
-      max-height: 360px;
+      max-height: 420px;
       padding-bottom: 1.35rem;
     }
 
     .faq-a p {
-      font-size: 1.02rem;
+      font-size: 1.03rem;
       color: var(--muted);
       line-height: 1.8;
       text-align: center;
@@ -1403,17 +1423,32 @@
     }
 
 
+    .cierre-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .cierre-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 18%;
+      filter: grayscale(1) brightness(.27) contrast(1.1);
+    }
+
     .cierre-vig {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at center, transparent 28%, var(--navy) 78%);
+      z-index: 1;
+      background: radial-gradient(ellipse at center, rgba(7, 14, 22, .64) 0%, rgba(7, 14, 22, .95) 100%);
     }
 
     .cierre-inner {
       max-width: 640px;
       margin: 0 auto;
       position: relative;
-      z-index: 1;
+      z-index: 2;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1422,9 +1457,9 @@
 
     .cierre-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.2rem, 4.2vw, 3.3rem);
+      font-size: clamp(2.4rem, 4.5vw, 3.6rem);
       font-weight: 600;
-      line-height: 1.18;
+      line-height: 1.08;
       color: #fff;
     }
 
@@ -1462,8 +1497,8 @@
     }
 
     .footer-brand img {
-      height: 170px;
-      margin-bottom: 1.2rem;
+      height: 64px;
+      margin: 0 0 1rem;
     }
 
     .footer-brand p {
@@ -1770,14 +1805,14 @@
       }
 
       .hero-h1 .gold {
-        font-size: clamp(1.85rem, 5vw, 2.6rem);
+        font-size: clamp(2.1rem, 5.6vw, 2.9rem);
       }
 
       .hero-eyebrow {
         justify-content: center;
         margin-top: 1.5rem;
-        font-size: clamp(.6rem, 2.75vw, .76rem);
-        letter-spacing: .14em;
+        font-size: clamp(.58rem, 2.6vw, .72rem);
+        letter-spacing: .12em;
       }
 
       .hero-eyebrow::before {
@@ -1785,13 +1820,13 @@
       }
 
       .sec-tag {
-        font-size: clamp(.58rem, 2.6vw, .76rem);
+        font-size: clamp(.66rem, 2.9vw, .86rem);
         letter-spacing: .14em;
       }
 
       .hero-credential {
         justify-content: center;
-        font-size: clamp(.58rem, 2.6vw, .7rem);
+        font-size: clamp(.8rem, 3.3vw, .98rem);
       }
 
       .hero-vals {
@@ -1863,8 +1898,7 @@
       }
 
       .dc-arrow {
-        justify-content: center;
-        display: flex;
+        align-self: center;
       }
 
       .tb-inner {
@@ -1925,19 +1959,26 @@
         align-items: center;
       }
 
-      /* listas centradas: contenedor width:100%, items position:relative + display:flex + justify-content:center */
+      /* ícono como primer carácter del texto: centrado como un bloque único, sin descolgarse al pasar a 2 líneas */
       .aut-feats {
         width: 100%;
       }
 
       .aut-feat {
-        width: fit-content;
-        max-width: 100%;
+        display: block;
+        text-align: center;
+        max-width: 360px;
         margin: 0 auto;
       }
 
+      .aut-feat i {
+        display: inline-block;
+        margin-right: .55rem;
+      }
+
       .aut-feat span {
-        text-align: left;
+        display: inline;
+        text-align: center;
       }
 
       .aut-stat-grid {
@@ -1945,9 +1986,25 @@
       }
 
       /* FORMULARIO */
+      .br-mobile {
+        display: inline;
+      }
+
       .form-left {
         align-items: center;
         text-align: center;
+      }
+
+      .form-priv {
+        display: block;
+        text-align: center;
+        max-width: 300px;
+        margin: .3rem auto 0;
+      }
+
+      .form-priv i {
+        display: inline-block;
+        margin-right: .55rem;
       }
 
       .form-trust {
@@ -1955,13 +2012,20 @@
       }
 
       .form-trust-i {
-        width: fit-content;
-        max-width: 100%;
+        display: block;
+        text-align: center;
+        max-width: 360px;
         margin: 0 auto;
       }
 
+      .form-trust-i i {
+        display: inline-block;
+        margin-right: .55rem;
+      }
+
       .form-trust-i span {
-        text-align: left;
+        display: inline;
+        text-align: center;
       }
 
       .form-quote {
@@ -1969,7 +2033,16 @@
       }
 
       .form-cta-alt {
-        text-align: left;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .5rem;
+      }
+
+      .form-cta-alt div,
+      .form-cta-alt strong,
+      .form-cta-alt span {
+        text-align: center;
       }
 
       /* FOOTER */
@@ -2083,7 +2156,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <header id="header">
     <div class="h-logo">
-      <a href="#hero"><img src="./LOGO_FERNANDOHOROWITZABOGADO-03.png" alt="Fernando Horowitz Abogado"></a>
+      <a href="#hero"><img src="./LOGO_FERNANDOHOROWITZABOGADO-03-crop.png" alt="Fernando Horowitz Abogado"></a>
     </div>
     <nav class="h-nav">
       <a href="#hero" class="active">Inicio</a>
@@ -2102,7 +2175,7 @@
   <button id="menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
   <div id="overlay"></div>
   <nav id="mobile-nav">
-    <div class="mn-logo"><img src="./LOGO_FERNANDOHOROWITZABOGADO-03.png" alt="Fernando Horowitz"></div>
+    <div class="mn-logo"><img src="./LOGO_FERNANDOHOROWITZABOGADO-03-crop.png" alt="Fernando Horowitz"></div>
     <a href="#hero">Inicio</a>
     <a href="#autoridad">Sobre mí</a>
     <a href="#dolor">Áreas de práctica</a>
@@ -2135,7 +2208,7 @@
     </div>
     <div class="hero-left reveal-left">
       <div class="hero-eyebrow">Separaciones, conflictos y medidas urgentes</div>
-      <div class="hero-credential"><i class="fas fa-briefcase"></i> Ex Director Nacional del SAIJ</div>
+      <div class="hero-credential"><i class="fas fa-graduation-cap"></i> Abogado | Periodista | Docente</div>
       <h1 class="hero-h1">
         Resolvé tu divorcio con claridad y estrategia
         <span class="gold">Protegemos tu tranquilidad</span>
@@ -2221,7 +2294,7 @@
             <div class="aut-stat-label">Confidencialidad garantizada</div>
           </div>
           <div class="aut-stat">
-            <div class="aut-stat-num" style="font-size:1.85rem;">CABA y GBA</div>
+            <div class="aut-stat-num" style="font-size:1.85rem; line-height:1.15;">CABA<br>y GBA</div>
             <div class="aut-stat-label">Zona de cobertura</div>
           </div>
           <div class="aut-stat">
@@ -2286,7 +2359,7 @@
     <div class="form-inner">
       <div class="form-left reveal-left">
         <span class="sec-tag">Consulta sin compromiso</span>
-        <h2 class="sec-title">Contanos qué <em>está pasando</em></h2>
+        <h2 class="sec-title">Contanos qué<br class="br-mobile"> <em>está pasando</em></h2>
         <p class="form-desc">Cada caso es único. Completá el formulario para que pueda entender tu situación y darte una
           primera orientación clara y personalizada.</p>
         <div class="form-trust">
@@ -2379,10 +2452,11 @@
   </section>
 
   <section id="cierre">
+    <div class="cierre-bg"><img src="./cierre-bg.jpg" alt=""></div>
     <div class="cierre-vig"></div>
     <div class="cierre-inner reveal">
       <span class="sec-tag">Tu tranquilidad es el primer paso</span>
-      <h2 class="cierre-title">Desactivá el conflicto <em>sin agravarlo.</em></h2>
+      <h2 class="cierre-title">Desactivá el conflicto<br><em>sin agravarlo.</em></h2>
       <p class="cierre-body">Muchas situaciones se ordenan antes de llegar a un desgaste mayor. Cuanto antes actúes, más
         posibilidades habrá para protegerte y encontrar una solución clara.</p>
       <p class="cierre-micro">Consultá de manera confidencial y sin compromiso.</p>
@@ -2393,7 +2467,7 @@
   <footer id="footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="./LOGO_FERNANDOHOROWITZABOGADO-03.png" alt="Fernando Horowitz Abogado">
+        <img src="./LOGO_FERNANDOHOROWITZABOGADO-03-crop.png" alt="Fernando Horowitz Abogado">
         <p>Abogado, periodista y docente universitario. Acompañamiento directo y confidencial en divorcios y conflictos familiares.</p>
         <div class="footer-social-links">
           <a href="https://www.instagram.com/horowitzfernando/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
